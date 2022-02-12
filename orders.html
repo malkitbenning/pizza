@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Pizza House Website">
+  <title>Pizza House - Your order</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <ul class="nav">
+    <div class="logo">
+      <a href="index.html">Pizza House</a>
+    </div>
+    <li>
+      <a href="index.html">Welcome</a>
+    </li>
+    <li>
+      <a href="orders.html">Orders</a>
+    </li>
+    <li>
+      <a href="offers.html">Offers</a>
+    </li>
+    <li>
+      <a href="contact.html">Contact Us</a>
+    </li>
+  </ul>
+
+  <div class="banner">
+    <img class="banner-image" src="images/food-order.jpg" </div>
+
+    <h1>Your Pizza Order</h1>
+
+<!-- The Form -->
+  <div align="center" class="order-div">
+    <!-- <form class="order-form" action="https://httpbin.org/post" method="post"> -->
+    <form class="order-form" action="order-confirm.html" method="post">
+      <fieldset class="order-fieldset">
+        <legend class="order-legend">
+          <h3>Build Your Pizza</h3>
+        </legend>
+
+        <h3>Choose Pizza Size:</h3>
+        <input type="radio" name="p-size" id="individual" value="Ind">
+        <label for="individual">Individual</label>
+        <input type="radio" name="p-size" id="medium" value="Medium" checked="checked">
+        <label for="medium">Medium 11"</label>
+        <input type="radio" name="p-size" id="large" value="Large">
+        <label for="15inch">Large 15"</label>
+        <br>
+
+
+        <h3>Choose Pizza Base</h3>
+        <input type="radio" name="base" id="thin" checked="checked" value="thin">
+        <label for="thin">Thin Base</label>
+        <input type="radio" name="base" id="thick" value="thick">
+        <label for="thick">Thick Base</label>
+        <br>
+
+
+        <h3>Choose Toppings</h3>
+
+        <h4>Meat</h4>
+        <table>
+          <tbody>
+
+            <tr>
+              <td>
+                <input type="checkbox" name="bacon" id="bacon" value="bacon">
+                <label for="bacon">Bacon</label>
+                <input type="checkbox" name="pepperoni" id="pepperoni" value="pepperoni">
+                <label for="pepperoni">Pepperoni</label>
+                <input type="checkbox" name="chicken" id="chicken" value="chicken">
+                <label for="chicken">Chicken</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+
+                <input type="checkbox" name="salami" id="salami" value="salami">
+                <label for="salami">Salami</label>
+                <input type="checkbox" name="ham" id="ham" value="ham">
+                <label for="ham">Ham</label>
+                <input type="checkbox" name="meatballs" id="meatballs" value="meatballs">
+                <label for="meatballs">Meatballs</label>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <h4>Vegatables</h4>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <input type="checkbox" name="tomatoes" id="tomatoes" value="tomatoes">
+                <label for="tomatoes">Tomatoes</label>
+                <input type="checkbox" name="onion" id="onion" value="onion">
+                <label for="onion">Onion</label>
+                <input type="checkbox" name="chilli" id="chilli" value="chilli">
+                <label for="chilli">Chilli</label>
+                <input type="checkbox" name="mushroom" id="mushroom" value="mushroom">
+                <label for="mushroom">Mushroom</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" name="pickle" id="pickle" value="pickle">
+                <label for="pickle">Pickles</label>
+                <input type="checkbox" name="sweetcorn" id="sweetcorn" value="sweetcorn">
+                <label for="sweetcorn">Sweetcorn</label>
+                <input type="checkbox" name="pepper" id="pepper" value="pepper">
+                <label for="pepper">Pepper</label>
+                <input type="checkbox" name="pineapple" id="pineapple" value="pineapple">
+                <label for="pineapple">Pineapple</label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+      <br><br>
+      <fieldset class="order-fieldset">
+        <legend class="order-legend">
+          <h3>Personal Details</h3>
+        </legend>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <strong>All fields are required</strong>
+                <br>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="forename">Forename</label>
+              </td>
+              <td>
+                <input type="text" name="forename" id="forename" placeholder="First Name" required>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="surname">Surname</label>
+              </td>
+              <td>
+                <input type="text" name="surname" id="surname" placeholder="Last Name" required>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email">Email</label>
+              </td>
+              <td>
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="phone">Phone Number</label>
+              </td>
+              <td>
+                <input type="text" name="phone" id="phone" placeholder="Phone Number" required>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="address">Address</label>
+              </td>
+              <td>
+                <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter Address" required></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="delivery">Delivery Time</label>
+              </td>
+              <td>
+                <select name="delivery" id="delivery">
+                  <optgroup label="Eat In">
+                    <option value="eating in">Eat In</option>
+                  </optgroup>
+                  <optgroup label="Take Away">
+                    <option value="ASAP" default> ASAP</option>
+                    <option value="30min">30 Minutes</option>
+                    <option value="45min">45 Minutes</option>
+                    <option value="1 hour"> 1 hour </option>
+                  </optgroup>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+
+      <br><br>
+      <fieldset class="order-fieldset">
+        <legend class="order-legend">
+          <h3>Payment Details</h3>
+        </legend>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <strong>Bank Details</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp</td>
+            </tr>
+            <tr>
+              <td>
+
+                <input type="radio" name="cardtype" id="mastercard" checked="checked" value="mastercard">
+                <label for="mastercard">Mastercard</label>
+              </td>
+              <td>
+                <input type="radio" name="cardtype" id="visa" value="visa">
+                <label for="visa">Visa</label>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp</td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="cardnumber">Card Number</label>
+              </td>
+              <td>
+                <input type="text" name="cardnumber" id="cardnumber" placeholder="16 digits">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="expirydate">Expiry Date</label>
+              </td>
+              <td>
+                <input type="text" name="expirydate" id="expirydate" placeholder="**/**">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="svv">Security Code</label>
+              </td>
+              <td>
+                <input type="svv" name="svv" id="svv" placeholder="***">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+      <br>
+
+      <input type="submit" value="Submit your Order">
+    </form>
+  </div>
+</body>
+
+</html>

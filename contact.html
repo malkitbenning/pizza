@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Pizza House Website">
+  <title>Pizza House</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <ul class="nav">
+    <div class="logo">
+      <a href="index.html">Pizza House</a>
+    </div>
+    <li>
+      <a href="index.html">Welcome</a>
+    </li>
+    <li>
+      <a href="orders.html">Orders</a>
+    </li>
+    <li>
+      <a href="offers.html">Offers</a>
+    </li>
+    <li>
+      <a href="contact.html">Contact Us</a>
+    </li>
+  </ul>
+
+  <div class="banner">
+    <img class="banner-image" src="images/pizza-contact.jpg"
+  </div>
+
+  <h1>Contact Us</h1>
+
+  <p class="para">We'd love to hear from you. If you have feedback, please use the form below to send us you comments.
+    Please be aware we don't actually have any admin staff, so it may take some time for us to reply.
+    Your message is important to us! We follow all government guidelines for GDPR - this is a test site, do not send
+    ay real details.
+  </p>
+  <br>
+  <hr>
+  <br>
+  <div align="center" class="comment-div">
+
+    <form class="comment-form" action="comment-confirm.html" method="post">
+    <!-- <form class="" action="mailto:malkitbenning@gmail.com?subject=pizzaorder" method="post"> -->
+    <!-- <form class="" action="https://httpbin.org/post" method="post"> -->
+
+      <br>
+      <fieldset class="contact-fieldset">
+        <legend class="contact-legend"><h1>Contact Details</h1></legend>
+        <label for="fullname">Your Name:</label>
+        <input type="text" name="fullname" id="fullname" placeholder="Enter your name here" value="" required>
+        <br> <br>
+        <label for="email">Your Email:</label>
+        <input type="text" name="email" id="email" placeholder="Valid email address" value="" required>
+        <br><br>
+        <label for="comment">Your Comment:</label>
+        <br>
+        <textarea name="comment" placeholder="Enter your comment here" rows="5" cols="33" maxlength="100" required></textarea>
+        <br><br>
+        <p><input type="checkbox" name="Agree" value="agree" required>I would like to be contacted using the information provided</p>
+
+        <br><br>
+        <input type="submit" name="" value="Submit">
+        <br><br>
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>

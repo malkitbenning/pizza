@@ -1,0 +1,208 @@
+
+@font-face {
+  font-family: 'pizza-font';
+  src: url(fonts/hotpizza.ttf);
+  /* font-style:normal; */
+
+}
+
+body {
+  /* margin: 0; */
+  padding: 0;
+  font-family: 'arial', serif;
+  background-color: #FDEFF4;
+}
+
+h1 {
+  font-family: 'pizza-font';
+  color: #CD090B;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'pizza-font';
+  color: #CD090B;
+  text-align: center;
+}
+
+hr {
+    width:50%;
+    margin:0 auto;
+}
+.para {
+/*  font-family: 'pizza-font'; */
+  font-size: 20px;
+  color: #423A3E;
+  margin: 15px;
+}
+
+
+/* menu bar */
+.nav {
+  font-family: 'pizza-font';
+/*  background-color: #474747;*/
+/*  background-color: #F1B516; */
+  background-color: #524A4E;
+
+
+  color: #FDEFF4;
+  list-style-type: none;
+  text-align: right;
+  padding: 20px 0 20px 0;
+  margin-bottom: 0;
+}
+
+.nav > li {
+  display: inline-block;
+  padding: 0 25px 0 25px
+
+}
+
+.nav > li > a {
+  text-decoration: none;
+  color: #FDEFF4;
+}
+
+.nav > li > a:hover {
+  color: #F1B516;
+}
+
+.logo {
+  color: #FDEFF4;
+  float: left;
+  padding-left: 25px;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.logo > a {
+  text-decoration: none;
+  color: #FDEFF4;
+
+}
+
+.banner {
+  width: 100%;
+  display: block;
+
+}
+
+.banner > .banner-image {
+  padding: 0 0;
+  width: 100%;
+  display: block;
+}
+
+.option {
+  width: 298px;
+  border: 1px solid #C1C1C1;
+  margin: 20px 10px;
+  padding: 0 5px;
+  float: left;
+  background-color: #FFC0D3;
+
+}
+
+.option > p {
+
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #524A4E;
+  /* max-width: 250px; */
+  margin: 0 -6px;
+  padding: 10px 0;
+}
+
+.options {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.option-header {
+  font-family: 'pizza-font';
+  font-size: 24px;
+  /* color: #CD090B; */
+  color: #FDEFF4;
+  padding: 10px 0;
+  background-color: #FF5C8D;
+  margin: 0 -6px;
+  text-align: center;
+}
+
+.menu-image {
+  max-width: 200px;
+  background-color: #FFC0D3;
+  margin: 15px 0 15px 0;
+}
+
+.menu-image:hover {
+  opacity: 0.2;
+}
+
+.comment-form {
+  padding: 100px 100px;
+}
+.contact-fieldset {
+  background-color: #FFC0D3;
+  width: 500px;
+  border: 3px solid #524A4E;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.contact-legend {
+  background-color: #FFC0D3;
+  border: 3px solid #524A4E;
+  padding: 0 10px;
+  border-radius: 10px;
+  /* height: 80px; */
+}
+
+
+.comment-div {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* text-align: center; */
+}
+
+
+input[type="submit"] {
+  color: #FFFFFF;
+  font-size: 18px;
+  background-color: #524A4E;
+
+}
+
+.voucher-image {
+  padding: 0 0;
+  width: 50%;
+  display: block;
+
+}
+
+.order-div {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* text-align: center; */
+}
+
+.order-form {
+  padding: 20px 20px;
+}
+
+.order-fieldset {
+  /* background-color: #FFC0D3; */
+  width: 800px;
+  border: 3px solid #524A4E;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.order-legend {
+  /* background-color: #FFC0D3; */
+  border: 3px solid #524A4E;
+  padding: 0 10px;
+  border-radius: 10px;
+  /* height: 80px; */
+}
